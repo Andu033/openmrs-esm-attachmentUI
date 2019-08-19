@@ -8,7 +8,7 @@ styles.fill = {
   border: '2px dotted #888',
   borderRadius: '10px',
   minHeight: '0px',
-  height: '25%',
+  height: '150',
   width: '15%',
   position: 'relative',
   float: 'left',

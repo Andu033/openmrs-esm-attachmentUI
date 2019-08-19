@@ -1,5 +1,6 @@
 import React from "react";
 import UploadWidget from "./UploadWidget/UploadWidget"
+import Gallery from "./Thumbnail/components/Gallery"
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import {
   BrowserRouter as Router,
@@ -8,6 +9,10 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+import { Provider } from 'react-redux'
+import { createStore, combineReducers } from 'redux'
+import {thumbnailReducers} from './Thumbnail/features/thumbnail'
+import {galleryReducers} from './Thumbnail/features/gallery'
 
 /* you'll need this CSS somewhere
 .fade-enter {
@@ -20,10 +25,19 @@ import {
   transition: opacity 250ms ease-in;
 }
 */
-
+const store = createStore(combineReducers({
+  openmrs:{
+    thumbnail:thumbnailReducers,
+    gallery:galleryReducers
+  }
+}))
 const AnimationExample = () => (
-  <Router basename="/home1">    <Route to="UploadWidget" component={UploadWidget}/>
-  </Router>
+  <Provider store={store}>
+    <UploadWidget/>
+    <Gallery/>
+  </Provider>
+  // <Router basename="/home">    <Route to="home" component={UploadWidget}/>
+  // </Router>
 );
 
 const NavLink = props => (

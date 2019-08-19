@@ -5,8 +5,7 @@ registerApplication(
   'home',
   // Our loading function
   () => import('./src/home.app.js'),  // Our activity function
-  () => location.pathname === "" || 
-    location.pathname === "/" || 
+  () =>
     location.pathname.startsWith('/home')
 );
 

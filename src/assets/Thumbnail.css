@@ -1,0 +1,120 @@
+.Thumbnail {
+  position: relative;
+height: 110px;
+border: 3px solid #F4F4F4;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding: 5px;
+margin: 10px 10px 10px 10px;
+}
+
+.icon{
+  cursor: pointer;  
+
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  padding: 0.2em;
+  /* display: inline; */
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+}
+
+.dateText{
+  font-size: 75%;
+  font-weight: bold;
+  color: #888;
+}
+.rowC{
+  display:flex; 
+  flex-direction:row;
+  border: 1px solid #EEE;
+background-color: #F9F9F9;
+margin: 15px 0 10px 0;
+}
+.Name {
+  height: 25px;
+  width: 130px;
+  cursor: pointer;  
+}
+.Image {
+  height: auto;
+  width: auto;
+  max-width: 120px;
+  max-height: 90px;
+  border-radius: 6px;
+
+}
+.container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: #e0d9d9a6;
+}
+.previewImage{
+  display: absolute;
+  max-width: 1200px;
+  height:auto;
+  width: auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+.imageText{
+  display: absolute;
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+.popup {
+  background-color: rgba(0, 0, 0, 0.39);
+  width:      100%;
+  height:     100%; 
+  z-index:    10;
+  top:        0; 
+  left:       0; 
+  position:   fixed; 
+}
+
+
+.Highlight {
+  background-color: rgb(238, 238, 238);
+}
+.ThumbnailText{
+  font-family: "OpenSans", Arial, sans-serif;
+  color: #363463;
+  font-size: 16px;
+}
+.ThumbnailTextHover{
+  color: rgb(245, 155, 52);
+  font-size: 17px;
+  font-weight: 500;
+}
+.InputName{
+  width: 120px;
+}
