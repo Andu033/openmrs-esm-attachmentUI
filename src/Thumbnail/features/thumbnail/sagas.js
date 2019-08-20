@@ -2,7 +2,7 @@ import { call, put, takeEvery, select } from "redux-saga/effects";
 import { checkMIME, arrayBufferToBase64 } from "./utils"
 import THUBNAIL_TYPES from "./types";
 import thumbnailActions from "./actions";
-import { selectors } from "../../store";
+import { selectors } from "../../../root.component";
 import thumbnailRest from "../../rest/thumbnailRest";
 import { utils } from "redux-saga";
 import { galleryActions } from '../gallery'
